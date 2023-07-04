@@ -1,0 +1,107 @@
+/* VARIABLES */
+:root {
+    --color-principal: #0FFFC3;
+    --color-secundario: #004332;
+    --color-fondo: #EFF6F5;
+    --color-texto: #A1A5A6;
+    --color-sombra: #0fffc34d;     
+}
+
+#iniciarSesion {
+    height: 100vh;
+    padding: 60px;
+    position: relative;
+    margin-top: 100px;
+}
+
+#formularioIniciarSesion {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.titulo-iniciarSesion {
+    margin-top: 60px;
+}
+
+.two-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-password, .input-text {
+    border: 2px solid #b4b4b4;
+    color: #888;
+    background: white;
+    outline: none;
+    padding: 15px 60px;
+    height: 45px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.input-password, .input-text {
+    width: 100%;
+}
+
+.inputConIcon {
+    position: relative;
+    width: 48%;
+}
+
+.inputConIcon i {
+    position: absolute;
+    left: 0;
+    padding: 14px 15px;
+    background: #888;
+    color: white;
+    transition: all 0.5s;
+}
+
+.inputConIcon input:focus {
+    border: 2px solid var(--color-principal);
+}
+
+.inputConIcon input:focus + i {
+    background: var(--color-principal);
+}
+
+.fields-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-input {
+    padding: 15px 50px;
+}
+
+.btn-input:hover {
+    padding: 15px 65px;
+}
+
+@media screen and (max-width: 850px) {
+
+    #iniciarSesion {
+        margin-top: 30px;
+    }
+
+    #formularioIniciarSesion {
+        width: 100%;
+    }
+
+    .titulo-iniciarSesion {
+        margin-top: 80px;
+    }
+
+    .two-fields {
+        flex-direction: column;
+    }
+
+    .inputConIcon {
+        width: 100%;
+    }
+
+}

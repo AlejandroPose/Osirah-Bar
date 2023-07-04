@@ -1,0 +1,44 @@
+/* VARIABLES */
+:root {
+    --color-principal: #0FFFC3;
+    --color-secundario: #004332;
+    --color-fondo: #EFF6F5;
+    --color-texto: #A1A5A6;
+    --color-sombra: #0fffc34d;     
+}
+
+#administrar {
+    height: 100vh;
+}
+
+.admin-titulos {
+    margin-top: 50px;
+}
+
+.personas {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+}
+
+.formPersonas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton.update {
+    margin: 0 20px;
+}
+
+.boton.delete {
+    margin: 0 20px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 850px) {
+
+    .admin-titulos {
+        margin-top: 200px;
+    }
+
+}
